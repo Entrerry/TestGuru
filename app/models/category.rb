@@ -1,2 +1,2 @@
-class Categorie < ApplicationRecord
+class Category < ApplicationRecord
 end
