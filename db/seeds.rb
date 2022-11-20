@@ -21,7 +21,7 @@ tests = Test.new([{ title: 'Ruby', level: 0, category: categories[0] },
                   { title: 'Unreal Engine 5', level: 1, category: categories[2] }])
 
 questions = Question.new([{ body: 'Ruby test', test: tests[0] },
-                          { body: 'Rails test'. test: tests[1] },
+                          { body: 'Rails test', test: tests[1] },
                           { body: 'HTML and CSS test', test: tests[2] },
                           { body: 'Unreal Engine 5 test', test: tests[3] }])
                           
