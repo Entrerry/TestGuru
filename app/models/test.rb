@@ -1,5 +1,9 @@
 class Test < ApplicationRecord
-  def self.array_of_test_names_in_descending_order(category)
-    by_category(category).order(title: :desc).pluck(:title)
+  belongs_to :category
+
+  scope :category_name, ->(name) { joins(:category).where(category: { title: name }) }
+
+  def self.test_by_category(name)
+    category_name(name).order(title: :desc).pluck(:title)
   end
 end
